@@ -48,7 +48,7 @@
                             Selects all HTML elements of the specified type.
                         </td>
                         <td>
-                            <code>p</code>
+                            <code>p</code><br>
                             is used to style the html tag
                             <code>&ltp&gt</code>
                         </td>
@@ -61,8 +61,44 @@
                             The element on the page with the specified ID. On a given HTML page, each id value should be unique.
                         </td>
                         <td>
-                            <code>#my-id</code>
+                            <code>#my-id</code><br>
                             selects <code>&ltp id="my-id"&gt</code> or <code>&lta id="my-id"&gt</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Class Selector
+                        </td>
+                        <td>
+                            The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page.
+                        </td>
+                        <td>
+                            <code>.my-class</code><br>
+                            selects <code>&ltp class="my-class"&gt</code> and <code>&lta class="my-class"&gt</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Attribute Selector
+                        </td>
+                        <td>
+                            The element(s) on the page with the specified attribute.
+                        </td>
+                        <td>
+                            <code>img[src]</code>
+                            selects <code>&ltimg src="myimage.png"&gt</code> but not <code>&ltimg&gt</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pseudo-class Selector
+                        </td>
+                        <td>
+                            The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)
+                        </td>
+                        <td>
+                            <code>a:hover</code>
+                            selects <code>&lta&gt</code>, but only when the mouse pointer is hovering over the link.
                         </td>
                     </tr>
                     
