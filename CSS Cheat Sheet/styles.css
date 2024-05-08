@@ -1,0 +1,89 @@
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: grey;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  text-align:left;
+  background-color: #212120;
+  color: white;
+}
+header {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color:white;
+}
+main {
+  width: 80%;
+  margin: auto;
+}
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  color: #4f6fab;
+}
+
+h2 {
+  font-size: 25px;
+  color: grey;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  margin:10px 0px;
+  line-height: 2;
+}
+.title {
+  width: 100%;
+  padding: 2%;
+  display: inline-block;
+  border-bottom: 1px solid grey;
+}
+
+table,th,td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 2px;
+  text-align: left;
+}
+table {
+  margin: 50px auto;
+}
+
+th {
+  color: #4f6fab;
+}
+
+tr {
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  width: auto;
+}
+
+ul {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+footer {
+  text-align: center;
+  background-color: grey;
+  padding: 10px;
+  margin: 0;
+}
