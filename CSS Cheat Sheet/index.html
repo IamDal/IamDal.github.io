@@ -1,110 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            CSS Selectors
-        </title>
-    </head>
-    <body>
-        <header>
-            <h1>CSS Selectors</h1>
-        </header>
-        <main>
-            <h2>What are selectors?</h2>
-            <p>
-                In order to add a style to our web page, we need a way to tell the computer what styles to apply to each element. 
-                Selectors are the name of the HTML element chosen to be stylized.
-            </p>
-            <h2>
-                Selector Types
-            </h2>
-            <p>
-                There are many different types of selectors. The ones described above
-                apply to the html tag name it uses but there are many other ways to customize our selections
-            </p>
-            <h2>
-                Selector Type Cheat Sheet
-            </h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Selector Name
-                        </th>
-                        <th>
-                            Selection
-                        </th>
-                        <th>
-                            Example
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            Element Selector
-                        </td>
-                        <td>
-                            Selects all HTML elements of the specified type.
-                        </td>
-                        <td>
-                            <code>p</code><br>
-                            is used to style the html tag
-                            <code>&ltp&gt</code>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Id Selector
-                        </td>
-                        <td>
-                            The element on the page with the specified ID. On a given HTML page, each id value should be unique.
-                        </td>
-                        <td>
-                            <code>#my-id</code><br>
-                            selects <code>&ltp id="my-id"&gt</code> or <code>&lta id="my-id"&gt</code>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Class Selector
-                        </td>
-                        <td>
-                            The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page.
-                        </td>
-                        <td>
-                            <code>.my-class</code><br>
-                            selects <code>&ltp class="my-class"&gt</code> and <code>&lta class="my-class"&gt</code>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Attribute Selector
-                        </td>
-                        <td>
-                            The element(s) on the page with the specified attribute.
-                        </td>
-                        <td>
-                            <code>img[src]</code>
-                            selects <code>&ltimg src="myimage.png"&gt</code> but not <code>&ltimg&gt</code>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Pseudo-class Selector
-                        </td>
-                        <td>
-                            The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)
-                        </td>
-                        <td>
-                            <code>a:hover</code>
-                            selects <code>&lta&gt</code>, but only when the mouse pointer is hovering over the link.
-                        </td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </main>
-
-    </body>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>My CSS Cheat Sheet</h1>
+        <ul>
+          <li>Created by: IamDal</li>
+          <li>Github: <a href="https://github.com/IamDal">IamDal</a></li>
+        </ul>
+       </div>
+    </header>
+    <main>
+      <h2>A collection of some common css elements and syntax</h2>
+      <h3 class="fjalla-one-regular">The Cheat Sheet</h3>
+      <p>Like in most coding languages, css follows syntax and rules that define the structure of the language. Before one can understand the structure, it is essential to know the different types of elements and how they work. The table below is a basic introduction into the most commonly utilized css elements.</p>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th><th>Syntax</th><th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>element selector</td><td>"main","div"</td><td>Selects the html elements main and div by name to apply formatting to</td>
+            </tr>
+            <tr>
+              <td>element.class</td><td>"main.blue-box"</td><td>Selects the main element with the class "blue-box"</td>
+            </tr>
+            <tr>
+              <td>class selector</td><td>".main",".blue-box"</td><td>Selects all elements that have been assigned the named class to apply formatting</td>
+            </tr>
+            <tr>
+              <td>ID selector</td><td>"#main","#id"</td><td>Selects a specific element by it`s given ID</td>
+            </tr>
+            <tr>
+              <td>Select all</td><td> "*" </td><td>Selects all elements</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3 class="fjalla-one-regular">Notes</h3>
+      <p>We can combine element,class and id selectors to be more specific when styling.
+      </p>
+      <ul>
+        <li>Separating element selectors by a comma will select multiple elements.<br> eg "main,div,p" will style those elements</li>
+        <li>separating elements selectors with a space will style element two within element 1.<br> eg "main div" will style the div element, inside main</li>
+      </ul>
+    </main>
+    <footer>
+      <p>Reference Information sourced at: <a href="https://www.w3schools.com/cssref/css_selectors.php">W3Schools</a></p>
+    </footer>
+  </body>
 </html>
