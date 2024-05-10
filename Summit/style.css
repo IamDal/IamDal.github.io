@@ -1,0 +1,57 @@
+a:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+a.nav-link {
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: grey;
+}
+
+.nav-link:active {
+  background-color: white;
+  color: grey;
+}
+
+.btn {
+  border: 1px solid grey;
+  border-radius: 20px;
+  background-color: white;
+  color: grey;
+  padding: 8px 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn:hover {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 18px;
+}
+
+.btn:active {
+  padding: 6px 12px;
+  color: white;
+  background-color: grey;
+}
+
+.activity {
+  cursor: pointer;
+}
+
+.activity:hover {
+  font-size: 40px;
+  box-shadow: 6px 6px 10px blue;
+}
+
+.activity:active {
+  width: 220px;
+  height: 180px;
+  margin: 10px 15px;
+  box-shadow: none;
+  font-size: 30px;
+  color: white;
+}
