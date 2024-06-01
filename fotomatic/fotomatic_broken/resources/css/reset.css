@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+header .content {
+  display: flex;
+  height: 5.3125rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.desktop {
+  float: right;
+}
+
+nav ul {
+  display: inline-flex;
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.desktop li {
+  margin: auto 1.25rem;
+}
+
+.logo {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  float: left;
+  margin-left: 1.25rem;
+}
+
+img.icon {
+  width: 1rem;
+}
+
+.main-content {
+  width: 100%;
+  background-color: #eaeaea;
+}
+
+#sign-up-section {
+  display: flex;
+  background-image: url("/fotomatic/fotomatic_broken/resources/images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10.625rem;
+  padding-bottom: 10.625rem;
+  padding-left: 6.25rem;
+  min-width: 30%;
+}
+
+#sign-up-cta {
+  border: 1px solid #979797;
+  border-radius: .25rem;
+  padding: 2rem 0 3.5rem 0;
+  text-align: center;
+  width: 35.5rem;
+  color: #ffffff;
+  font-family: "Roboto";
+}
+
+div.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.cursive {
+  font-family: "damion";
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.striking {
+  display: inline-block;
+  font-family: "Rubik";
+  font-size: 3.125rem;
+  margin-bottom: .75rem;
+}
+
+.email {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.email span {
+  background-color: inherit;
+  display: inline-block;
+  margin-bottom: 1.625rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.4;
+  width: 25.5rem;
+}
+
+.email .button {
+  background-color: #4a4a4a;
+  border-radius: .25rem;
+  width: 25.5rem;
+  height: 4rem;
+  align-content: center;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+#features-section {
+  display: flex;
+  justify-content: center;
+  gap: 2.375rem;
+  padding: 4rem 5%;
+  line-height: 1.2;
+  background-color: #f3f3f3;
+}
+
+.feature {
+  flex:1;
+  padding: 2rem;
+  margin: 0 1.25rem;
+  background-color: #ffffff;
+}
+
+.center {
+  text-align: center;
+}
+
+.feature .content {
+  padding: 2.5rem;
+}
+
+.feature .content {
+  max-width: 80%;
+  height: 9.1875rem;
+}
+
+.feature .image-container {
+  width: 90%;
+  height: 65%;
+  margin: 0 auto;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+#features-section h2 {
+  color: #4a4a4a;
+  font-size: 2.25rem;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+#features-section h3 {
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+#filters-section {
+  box-sizing: border-box;
+  background-color: #4a4a4a;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  padding: 4rem 1% 4rem 1%;
+}
+
+#filters-section .content {
+  display: block;
+}
+
+#filters-section h2{
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+#filters-section h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Roboto";
+  line-height: 1.4;
+  margin-bottom: 5rem;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+}
+
+.images-container .image-container {
+  margin: 0;
+}
+
+.extra {
+  object-fit: cover;
+}
+
+#quotes-section {
+  box-sizing: border-box;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%;
+}
+
+
+
+#quotes-section .quote {
+  display: inline-block;
+  color: #4a4a4a;
+  font-size: 1.875rem;
+  font-family: "Palatino";
+  font-style: italic;
+  line-height: 1.1;
+  margin-right: 1.875rem;
+}
+
+footer {
+  box-sizing: border-box;
+  width: inherit;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #9b9b9b;
+  height: 3.875rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #ffffff;
+  font-size: .75rem;
+  font-family: "Roboto";
+}
+
+nav.mobile {
+  display: flex;
+}
+
+nav.mobile .button {
+  background-color: #9DC20A;
+  padding: .1875rem .5rem;
+  border-radius: .25rem;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 769px) {
+  nav.mobile {
+    display: none;
+  }
+  #sign-up-cta {
+    background-color: #9DC20A;
+  }
+
+  #features-section .content {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+  nav.mobile img {
+    display: none;
+  }
+
+  #sign-up-cta {
+    background-color: rgba(255 255 255 0);
+    padding: 2rem 0 3.5rem 0;
+    text-align: center;
+    width: 35.5rem;
+    color: #ffffff;
+    font-family: "Roboto";
+  }
+
+  #sign-up-cta .email {
+    display: none;
+  }
+
+  #features-section .content {
+    text-align: left;
+  }
+
+}
